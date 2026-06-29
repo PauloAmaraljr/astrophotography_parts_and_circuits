@@ -1,0 +1,3 @@
+Nesta versão 5, tentei reduzir as instruções da função SendStep para corrigir a diferença de tempo para uma volta completa nos dois sentidos (em um sentido, o eixo gira mais rápido, parece mais leve).
+
+Realmente deu certo. Era por causa da função Serial.println() que imprimia textos de tamanho diferentes, e isso resultava em tempos de execução ligeiramente diferentes para cada sentido.
